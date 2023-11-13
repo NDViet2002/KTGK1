@@ -11,19 +11,6 @@ bool soHoanThien(int n)
 	if((int)sqrt(n) == sqrt(n))
 		return true;
 	return false;
-
-bool soChinhPhuong(int n)
-{
-	int s =0;
-	for(int i =1; i< n; i++)
-	{
-		if(n%i ==0)
-			s++;
-	}
-	if(s== n)
-		return true;
-	return false;
-
 }
 int main()
 {
@@ -38,12 +25,6 @@ int main()
 		cout << "N khong la so hoan thien";
 	}
 
-	if(soChinhPhuong(n))
-	{
-		cout << "N la so chinh phuong";
-	}else{
-		cout << "N khong la so chinh phuong";
-	}
 	return 0;
 }
 
