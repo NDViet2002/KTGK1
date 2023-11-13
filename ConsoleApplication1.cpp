@@ -4,14 +4,6 @@
 #include <iostream>
 using namespace std;
 
-
-bool soHoanThien(int n)
-{
-	
-	if((int)sqrt(n) == sqrt(n))
-		return true;
-	return false;
-
 bool soChinhPhuong(int n)
 {
 	int s =0;
@@ -25,18 +17,12 @@ bool soChinhPhuong(int n)
 	return false;
 
 }
+
 int main()
 {
 	int n;
     cout << "Nhap mot so nguyen";
 	cin >> n;
-
-	if(soHoanThien(n))
-	{
-		cout << "N la so hoan thien";
-	}else{
-		cout << "N khong la so hoan thien";
-	}
 
 	if(soChinhPhuong(n))
 	{
